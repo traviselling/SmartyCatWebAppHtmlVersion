@@ -1,0 +1,69 @@
+html
+  head
+    meta(charset='UTF-8')
+    |         
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |         
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    |         
+    title Home
+    // Latest compiled and minified CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    |         
+    link(rel='stylesheet', href='public/stylesheets/style.css')
+    |         
+    link(href='https://fonts.googleapis.com/css?family=Alfa+Slab+One', rel='stylesheet')
+    // Latest compiled and minified JavaScript
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    |         
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+  |     
+  body
+    .bg.container-fluid
+      .row
+        .col-md-3.menu
+          .logo
+            img(src='public/images/LogoGlasses150.png')
+          |                     
+          .mainNav
+            ul
+              li
+                a(href='apps.html') APPS
+                |                                 
+                img(src='public/images/apps.png', alt='')
+              |                             
+              li
+                a(href='services.html') SERVICES
+                |                                 
+                img(src='public/images/services.png', alt='')
+              |                             
+              li
+                a(href='about.html') ABOUT
+                |                                 
+                img(src='public/images/about.png', alt='')
+              |                             
+              li
+                a(href='contact.html') CONTACT
+                |                                  
+                img(src='public/images/contact.png', alt='')
+        |                 
+        |            
+        |                
+        |                 
+        #mainWindow.col-md-9
+          .intro
+            p.welcome Welcome to
+            |                     
+            p
+              span.smarty smarty
+              span.design cat.design
+          |                 
+          p.tagLine(hidden='') JAVASCRIPT DEVELOPMENT
+          |                 
+          .homeBg
+        // end col-md-9
+      // end row
+    // end container
+    script(src='public/javascripts/jquery-ui.min.js')
+    |         
+    script(src='public/javascripts/myScripts.js')
